@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import ThreadsService from "../controllers/ThreadsController";
+import ThreadsService from "../services/ThreadsServices";
 
 
 // bikin jembatan untuk memanggil service nya //
@@ -15,9 +15,11 @@ class ThreadController {
   create(req: Request, res: Response) {
     ThreadsService.create(req, res);
   }
+
   delete(req: Request, res: Response) {
     ThreadsService.delete(req, res);
   }
+  
   update(req: Request, res: Response) {
     ThreadsService.update(req, res);
   }

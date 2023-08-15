@@ -4,10 +4,14 @@ import {useState} from 'react'
 import { Navbar } from "@/components/Navbar/Navbar"
 import { MyProfiles } from "@/components/MyProfile/MyProfile"
 import { Grid, GridItem} from "@chakra-ui/react"
+import { API } from "@/libs/api"
 
 
-export function Home() {
-    const [Thread, _] = useState(ThreadDummy)  
+const Home = () => {
+    const [Thread, _] = useState(ThreadDummy)
+    
+    const resp = API.get("/thread");
+    console.log(resp);
     return (
         <>
         <Grid
@@ -35,3 +39,5 @@ export function Home() {
         </>
     )
 }
+
+export default Home;

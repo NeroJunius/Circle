@@ -6,7 +6,7 @@ import ThreadsController from '../controllers/ThreadsController';
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('hello World! from V1');
+  res.send('hello World!');
 });
 
 router.get("/thread",ThreadsController.find)
