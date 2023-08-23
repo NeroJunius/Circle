@@ -1,20 +1,18 @@
-export interface User {
-  id?: number;
-  fullname?: string;
-  username?: string;
-  picture?: string;
-}
+import { IUser } from "./users";
 
-export interface IThreadCard {
+interface IDetail 
+{
     id?: number;
+    user: IUser
     fullname?: string;
     username?: string; 
     picture?: string;
     posted_at?: string;
     content?: string;
     image?: string;
+    isLiked?: boolean;
     likesCount?: number;
     repliesCount?: number;
-    isLiked?: boolean;
-  }
- 
+}
+
+export default IDetail

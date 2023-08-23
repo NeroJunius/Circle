@@ -1,7 +1,6 @@
 import {  
     Text, 
     Button, 
-    Container,
     Box,
     Stack,
     Flex
@@ -17,7 +16,8 @@ import { BiLogOut } from 'react-icons/bi'
 
 export function Navbar() {
     return (
-        <Container display='flex' flexDirection='column' m={5}>
+        <>
+        <Flex flexDirection='column' ml={5}>
              <Text 
                 textDecorationColor='green'
                 fontWeight='bold'
@@ -41,7 +41,7 @@ export function Navbar() {
                 m='4'
                 border='1px'
                 borderRadius={25}
-                w='350px' h='50'
+                w='300px' h='50'
                 bg='green'
                 variant='solid'
                 alignSelf='center'
@@ -55,6 +55,8 @@ export function Navbar() {
 
             </Stack>
        
-        </Container>
+        </Flex>
+        </>
+        
     )
 }

@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 
 router.get("/thread",ThreadsController.find)
 router.get("/thread/:id", ThreadsController.findOne)
-router.post("/thread/create",ThreadsController.create)
+// router.post("/thread/create",ThreadsController.create)
 router.delete("/thread/delete/:id", ThreadsController.delete)
 router.patch("/thread/update/:id", ThreadsController.update)
 

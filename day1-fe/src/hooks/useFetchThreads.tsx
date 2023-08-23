@@ -1,13 +1,13 @@
-import API from "@/libs/api"
+import { API }from "@/libs/api"
 import { useEffect, useState } from "react"
-import ThreadCardProps from "../interface/threads";
+import {IThreadCard} from "@/interface/threads";
 
 export function useFetchThread() {
-    const [threads, setThreads] = useState<ThreadCardProps[]>([]):
+    const [Threads, setThreads] = useState<IThreadCard[]>([]);
 
     async function getThreads() {
         try {
-            const Response = await API.get("/threads");
+            const Response = await API.get("/thread");
             console.log("API data:", Response.data);
             setThreads(Response.data);
         } catch (error) {
@@ -17,7 +17,9 @@ export function useFetchThread() {
 
     useEffect(() => {
         getThreads();
+        
     }, [])
-    return {threads}
+    
+    return Threads
            
 }

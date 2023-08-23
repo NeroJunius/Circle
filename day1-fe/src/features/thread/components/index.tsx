@@ -1,1 +1,1 @@
-export * from './ThreadCard'
+// export * from '../../../components/ThreadCard'

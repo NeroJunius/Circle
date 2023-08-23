@@ -38,7 +38,7 @@ class ThreadService {
       });
       return res.status(200).json(threads);
     } catch {
-      return res.status(404).json("Something error in fineOne");
+      return res.status(404).json("Something error in findOne");
     }
   }
 
@@ -77,8 +77,8 @@ class ThreadService {
 // Potongan kode tersebut adalah bagian dari fungsi delete yang menghapus thread dari basis data. 
 // Pertama, kode ini mengambil ID thread dari permintaan. Kemudian, dengan menggunakan this.threadRepository.delete, thread dengan ID yang sesuai dihapus dari basis data. 
 // Jika penghapusan berhasil dan ada thread yang dihapus, kode akan mengembalikan status kode 200 dan pesan "Thread deleted successfully.". 
-// Jika tidak ada thread yang ditemukan dengan ID yang diberikan, kode akan mengembalikan status kode 404 dan pesan "Thread not found.". 
-// Jika terjadi kesalahan selama proses penghapusan, kode akan menangkap kesalahan dan mengembalikan status kode 500 beserta pesan kesalahan yang sesuai.
+// Status kode 404 muncul jika tidak menemukan thread dengan ID". 
+// Status kode 500 muncul jika proses penghapusan bermasalah.
  
  
   async update(req: Request, res: Response) {

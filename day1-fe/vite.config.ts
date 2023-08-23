@@ -4,12 +4,13 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 
-const _dirname = path.dirname(new URL(import.meta.url).pathname)
+// const __dirname = path.dirname(new URL(import.meta.url).pathname)
+
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(_dirname, './src'),
+      '@': path.resolve('./src'),
     }
   }
 })

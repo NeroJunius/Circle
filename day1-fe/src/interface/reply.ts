@@ -1,11 +1,5 @@
-export interface User {
-  id?: number;
-  fullname?: string;
-  username?: string;
-  picture?: string;
-}
-
-export interface IThreadCard {
+export interface Reply 
+{
     id?: number;
     fullname?: string;
     username?: string; 
@@ -16,5 +10,4 @@ export interface IThreadCard {
     likesCount?: number;
     repliesCount?: number;
     isLiked?: boolean;
-  }
- 
+}
