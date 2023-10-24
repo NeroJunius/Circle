@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "author_picture": "https://images.unsplash.com/photo-1602713876960-09cc90c9869d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+    "author_name": "Fajar Rohino",
+    "author_username": "fajarrohino",
+    "posted_at": "4h",
+    "content": "Bukan bahagia yang menjadikan kita bersyukur, tetapi dengan bersyukurlah yang akan menjadikan hidup kita bahagia.",
+    "image": "https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=444&q=80",
+    "likes_count": 10,
+    "replies_count": 20,
+    "is_liked": false
+  },
+  {
+    "id": 2,
+    "author_picture": "https://images.unsplash.com/photo-1593331590887-a31faa690f72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+    "author_name": "Fajar ",
+    "author_username": "rohino",
+    "posted_at": "4h",
+    "content": "Sakit dalam perjuangan itu hanya sementara. Bisa jadi kamu rasakan dalam semenit, sejam, sehari, atau setahun. Namun jika menyerah, rasa sakit itu akan terasa selamanya.",
+    "image": "https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=444&q=80",
+    "likes_count": 10,
+    "replies_count": 20,
+    "is_liked": true
+  },
+  {
+    "id": 3,
+    "author_picture": "https://images.unsplash.com/photo-1610642434561-956cd4111f42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80",
+    "author_name": "Rohino",
+    "author_username": "fajar",
+    "posted_at": "4h",
+    "content": "Kejujuran adalah batu penjuru dari segala kesuksesan. Pengakuan adalah motivasi terkuat. Bahkan kritik dapat membangun rasa percaya diri saat 'disisipkan' di antara pujian.",
+    "image": "https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=444&q=80",
+    "likes_count": 10,
+    "replies_count": 20,
+    "is_liked": true
+  }
+]

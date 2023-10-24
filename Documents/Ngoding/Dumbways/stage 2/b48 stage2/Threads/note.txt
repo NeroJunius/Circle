@@ -1,0 +1,7 @@
+- boolean = true | false
+- LoginSession dibawa oleh token ke setiap route file dengan fitur authenticate disetiap route filenya
+- refetch digunakan untuk menyimpan data perubahan yang terjadi berdasarkan trigger dari frontendnya
+- perubahan data pada thread terkait like dan reply menggunakan is_liked berfiturkan boolean yang mengambil data berdasarkan constraint dari user id yang dibawa
+- gunakan Redux untuk pemanggilan setiap fungsi agar lebih mudah (tapi sulit mempelajarinya)
+- gunakan console.log saat error yang terjadi adalah bug yang tidak terbaca sebagai error pada vscode dan tidak terbaca error pada console dari inspectnya sendiri
+- 
