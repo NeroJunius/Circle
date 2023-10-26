@@ -3,13 +3,13 @@ import * as amqp from "amqplib";
 import { v2 as cloudinary } from "cloudinary";
 import { AppDataSource } from "../data-source";
 import { Threads } from "../entities/Thread";
-import { jancok } from "../libs/cloudinary";
+import { cloudinnary } from "../libs/cloudinary";
 // class proccess { 
 //     private readonly threadRepository: Repository<Thread> = 
 //     AppDataSource.getRepository(Thread) 
     export async function processQueue() { 
         try { 
-            jancok()
+            cloudinnary()
             const rabbitConnection = await amqp.connect("amqp://localhost") 
             const channel = await rabbitConnection.createChannel() 
              

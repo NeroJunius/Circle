@@ -44,9 +44,9 @@ export function SideBar() {
         <Flex m={4} p={5} justify={'center'} flexDirection={"row"}>
            <Box flexDirection={"row"}>
               <IoIosLogOut/>
-              <Link to="#">
+              <Button onClick={() => localStorage.removeItem('token')}>
                 Logout
-              </Link>
+              </Button>
           </Box> 
         </Flex>
       </Box>

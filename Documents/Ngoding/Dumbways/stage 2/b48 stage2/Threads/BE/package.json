@@ -4,7 +4,6 @@
    "description": "Awesome project developed with TypeORM.",
    "type": "commonjs",
    "devDependencies": {
-      "@types/bcrypt": "^5.0.0",
       "@types/express": "^4.17.17",
       "@types/jquery": "^3.5.16",
       "@types/jsonwebtoken": "^9.0.2",
@@ -15,8 +14,9 @@
       "typescript": "^5.1.6"
    },
    "dependencies": {
+      "@types/bcrypt": "^5.0.1",
       "amqplib": "^0.10.3",
-      "bcrypt": "^5.1.0",
+      "bcrypt": "^5.1.1",
       "cloudinary": "^1.40.0",
       "cors": "^2.8.5",
       "express": "^4.18.2",
