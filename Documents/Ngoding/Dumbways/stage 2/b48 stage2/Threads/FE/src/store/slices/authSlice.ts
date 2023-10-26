@@ -20,6 +20,7 @@ export const authSlice = createSlice({
             const email = action.payload.email
             const username = action.payload.username
             const fullname = action.payload.fullname
+            const token = action.payload.token
             const picture = action.payload.picture
             const description = action.payload.description
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IThreadCard } from "../../../interface/thread";
-import API from "../../../lib/api";
+import { API } from "../../../lib/api";
 import { useParams } from "react-router-dom";
 
 export function useFetchThread() {

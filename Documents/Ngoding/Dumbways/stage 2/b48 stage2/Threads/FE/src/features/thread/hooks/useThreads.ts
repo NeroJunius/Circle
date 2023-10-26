@@ -1,5 +1,5 @@
 import { IThreadPost } from "../../../interface/thread";
-import API from "../../../lib/api";
+import { API } from "../../../lib/api";
 import { GET_THREADS } from "../../../store/rootReducer";
 import { RootState } from "../../../store/types/rootState";
 import { ChangeEvent, FormEvent, useEffect, useRef, useState, useCallback } from "react";

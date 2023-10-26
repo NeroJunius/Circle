@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { IThreadCard } from "../../../interface/thread";
 import { GET_THREADS } from "../../../store/rootReducer";
 import { RootState } from "../../../store/types/rootState";
-import API from "../../../lib/api";
+import { API } from "../../../lib/api";
 
 
 export function useThreadCard() {

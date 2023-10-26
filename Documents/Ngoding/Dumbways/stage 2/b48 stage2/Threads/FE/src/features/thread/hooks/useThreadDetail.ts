@@ -1,6 +1,6 @@
 import { IReplyPost } from "../../../interface/reply";
 import { IThreadCard } from "../../../interface/thread";
-import API from "../../../lib/api";
+import { API } from "../../../lib/api";
 import { ChangeEvent, FormEvent, useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 

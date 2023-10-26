@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import API from "../../../lib/api";
+import { API } from "../../../lib/api";
 import { IUserLogin } from "../../../interface/user";
 import { useNavigate } from "react-router-dom";
 import { AUTH_LOGIN } from "../../../store/rootReducer";

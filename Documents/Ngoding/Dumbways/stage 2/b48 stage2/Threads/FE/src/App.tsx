@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import {  useSelector } from 'react-redux';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 // import DetailThread from './features/thread/components/DetailThread';
-import API, { setAuthToken } from './lib/api';
+import { API, setAuthToken } from './lib/api';
 // import Registration from './pages/Register';
 // import { AUTH_CHECK, AUTH_ERROR } from './store/rootReducer';
 import { RootState } from './store/types/rootState';
