@@ -2,7 +2,14 @@ import { IThreadPost } from "../../../interface/thread";
 import { API } from "../../../lib/api";
 import { GET_THREADS } from "../../../store/rootReducer";
 import { RootState } from "../../../store/types/rootState";
-import { ChangeEvent, FormEvent, useEffect, useRef, useState, useCallback } from "react";
+import {
+  ChangeEvent,
+  FormEvent,
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+} from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 export function useThreads() {
@@ -24,26 +31,24 @@ export function useThreads() {
 
   async function handlePost(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-  
+
     const formData = new FormData();
     formData.append("content", form.content);
     formData.append("image", form.image as File);
-  
+
     try {
       const response = await API.post("/thread", formData);
       console.log("berhasil menambahkan thread", response);
-      
+
       await getThreads();
     } catch (error) {
       console.log("gagal menambahkan thread: ", error);
     }
   }
-  
 
   useEffect(() => {
     getThreads();
   }, [getThreads]);
-
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     const { name, value, files } = event.target;

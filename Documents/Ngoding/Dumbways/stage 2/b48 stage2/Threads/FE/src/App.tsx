@@ -8,7 +8,7 @@ import { API, setAuthToken } from './lib/api';
 // import { AUTH_CHECK, AUTH_ERROR } from './store/rootReducer';
 import { RootState } from './store/types/rootState';
 import { Box } from '@chakra-ui/react';
-import Home from './pages/Home';
+import Home from './pages';
 import DetailThread from './features/thread/components/DetailThread';
 import { Login } from './pages/Login';
 import Register from './pages/Register';
