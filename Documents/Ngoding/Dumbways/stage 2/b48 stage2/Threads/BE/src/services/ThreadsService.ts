@@ -18,17 +18,6 @@ class ThreadServices {
         },
       });
 
-      // /image error
-      // let responBaru = []
-      // threads.forEach((element) => ({
-      //   element.image = "http:localhost:5000/uploads" + element.image
-
-      // responBaru.push({
-      //   ...e
-      //   likes_count:Math.floor(Math.random()* 100)
-      //   replies_count:Math.floor(Math.random()* 100)
-      // })
-      // }));
       return res.status(200).json(threads);
     } catch (error) {
       return res.status(500).json(error);

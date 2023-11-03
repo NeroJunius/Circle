@@ -36,7 +36,6 @@ export const authSlice = createSlice({
         },
 
         AUTH_CHECK: (state, action) => {
-
             const {
                 id,
                 email,

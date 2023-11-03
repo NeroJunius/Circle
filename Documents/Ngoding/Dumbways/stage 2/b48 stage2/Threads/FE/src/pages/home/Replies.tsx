@@ -1,8 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import DetailThread from "../../features/thread/components/DetailThread";
-import MyProfile from "../../features/thread/components/MyProfile";
+import MyProfile from "./MyProfile";
 import NavStatus from "../../features/thread/components/NavSatus";
-import SideBar from "../../features/thread/components/SideBar";
+import SideBar from "./SideBar";
 
 export function Replies() {
   //   const { id } = useParams();

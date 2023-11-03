@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import {  useSelector } from 'react-redux';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
@@ -12,6 +11,7 @@ import Home from './pages';
 import DetailThread from './features/thread/components/DetailThread';
 import { Login } from './pages/Login';
 import Register from './pages/Register';
+import { SearchPage }  from './pages/home/Search';
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -48,6 +48,7 @@ function App() {
         <Box>
           <Routes>
             <Route path="/"  element={<Home/>}/>
+            <Route path="/search" element={<SearchPage/>}/>
             <Route path="/detail/:id"  element={localStorage.token ? <DetailThread /> : <Navigate to="/auth/login" />} />
             <Route path="/auth/login" element={!localStorage.token ? <Login /> : <Navigate to="/" />} />
             <Route path="/auth/register" element={!localStorage.token ? <Register /> : <Navigate to="/" />} />

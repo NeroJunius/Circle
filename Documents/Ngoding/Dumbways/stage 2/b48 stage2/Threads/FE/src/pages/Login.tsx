@@ -1,4 +1,4 @@
-import FormLogin from "../features/thread/components/FormLogin";
+import FormLogin from "../features/thread/auth/FormLogin";
 import { Grid, GridItem } from "@chakra-ui/react";
 
 export function Login() {

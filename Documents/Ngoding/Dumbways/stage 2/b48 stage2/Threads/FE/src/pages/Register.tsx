@@ -1,5 +1,5 @@
 import { Grid, GridItem } from "@chakra-ui/react";
-import FormRegister from "../features/thread/components/FormRegister";
+import FormRegister from "../features/thread/auth/FormRegister";
 
 export default function Register() {
   return (

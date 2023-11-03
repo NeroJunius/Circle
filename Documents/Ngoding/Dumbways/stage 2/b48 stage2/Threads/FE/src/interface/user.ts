@@ -9,8 +9,8 @@ export interface IUser {
 }
 
 export interface IUserRegister {
-  username: string;
   fullname: string;
+  username: string;
   email: string;
   password: string;
 }

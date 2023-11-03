@@ -17,7 +17,9 @@ import { IThreadCard } from "../../../interface/thread";
 export function ThreadCard(props: IThreadCard) {
   const [like, setLike] = useState(props.likes_count || 0);
   const [isLiked, setIsLike] = useState(props.is_liked || false);
-  const [showImage, setShowImage] = useState(true);
+  const [showImage, setShowImage] = useState(!!props.image); 
+  const [isHovered, setIsHovered] = useState(false);
+  const delayHoverTimeout = 1000; 
 
   const handleLikeClick = () => {
     if (isLiked) {
@@ -30,6 +32,16 @@ export function ThreadCard(props: IThreadCard) {
 
   // responsive layout//
   const [isSmallerThan600] = useMediaQuery("(max-width: 599px)");
+
+  const handleMouseEnter = () => {
+    setTimeout(() => {
+      setIsHovered(true);
+    }, delayHoverTimeout);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   return (
     <Container>
@@ -54,14 +66,20 @@ export function ThreadCard(props: IThreadCard) {
             <Box py={2}>
               <Text>{props.content}</Text>
               {showImage && (
-                <Image
-                  w={450}
-                  h={250}
-                  objectFit="cover"
-                  borderRadius={10}
-                  src={props.image}
-                  onError={() => setShowImage(false)}
-                />
+                <div
+                  className="image-container"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <Image
+                    w={isHovered ? "auto" : 450}
+                    h={isHovered ? "auto" : 250}
+                    objectFit="cover"
+                    borderRadius={10}
+                    src={props.image}
+                    onError={() => setShowImage(false)}
+                  />
+                </div>
               )}
             </Box>
             <Flex justifyContent="space-around">

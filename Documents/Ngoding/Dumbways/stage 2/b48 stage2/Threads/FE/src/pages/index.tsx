@@ -8,8 +8,8 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { ThreadCard } from "../features/thread";
-import MyProfile from "../features/thread/components/MyProfile";
-import SideBar from "../features/thread/components/SideBar";
+import MyProfile from "./home/MyProfile";
+import SideBar from "./home/SideBar";
 import { useFetchThread } from "../features/thread/hooks/useFetchThread";
 import { IoIosLogOut } from "react-icons/io";
 import { AUTH_LOGOUT } from "../store/rootReducer";
@@ -38,7 +38,7 @@ const MainPage = () => {
               <SideBar />
               <Flex m={4} p={5} justify={"center"} flexDirection={"row"}>
                 <Box flexDirection={"row"}>
-                  <Button onClick={() => handleLogOut()}>
+                  <Button variant="ghost" onClick={() => handleLogOut()}>
                     <IoIosLogOut />
                     Logout
                   </Button>
@@ -52,6 +52,7 @@ const MainPage = () => {
             </Box>
 
             <Box>
+            
               {threads.map((dummy, index) => (
                 <ThreadCard
                   key={index}
@@ -64,6 +65,7 @@ const MainPage = () => {
                   replies_count={dummy.replies_count}
                 />
               ))}
+
             </Box>
           </VStack>
 
